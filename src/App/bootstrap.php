@@ -5,10 +5,13 @@ declare(strict_types=1);
 require __DIR__ . "/../../vendor/autoload.php";
 
 use Framework\App;
-use function App\Config\regiterRoutes;
+use App\Config\Paths;
 
-$app = new App();
+use function App\Config\{regiterRoutes, registerMiddleware};
+
+$app = new App(Paths::SOURCE . "App/container-definitions.php");
 
 regiterRoutes($app);
+registerMiddleware($app);
 
 return $app;
