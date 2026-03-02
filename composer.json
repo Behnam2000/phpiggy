@@ -8,7 +8,9 @@
             "email": "safaribehnam6@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "phpdotnet/phpdotnet": "^0.0.3"
+    },
     "autoload": {
         "psr-4": {
             "Framework\\": "src/Framework",
