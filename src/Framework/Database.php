@@ -23,7 +23,7 @@ class Database
 
         try {
             $this->connection = new PDO($dsn, $username, $password, [
-                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+                19 => 2
             ]);
         } catch (PDOException $e) {
             die("Unable to connect to database");
